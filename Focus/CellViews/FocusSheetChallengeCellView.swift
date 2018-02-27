@@ -1,15 +1,15 @@
 //
-//  FocusSheetTableCellView.swift
+//  FocusSheetChallengeCellView.swift
 //  Focus
 //
-//  Created by Gleb Sabirzyanov on 22/02/2018.
+//  Created by Gleb Sabirzyanov on 27/02/2018.
 //  Copyright © 2018 Gleb Sabirzyanov. All rights reserved.
 //
 
 import Cocoa
 
-class FocusSheetTableCellView: NSTableCellView {
-
+class FocusSheetChallengeCellView: NSTableCellView, FocusSheetTableCellView {
+    
     @IBOutlet weak var itemColorLabel: LabelColorView!
     @IBOutlet weak var checkbox: NSButton!
     @IBOutlet weak var nameLabel: NSTextField!
@@ -25,7 +25,3 @@ class FocusSheetTableCellView: NSTableCellView {
     }
 }
 
-protocol FocusSheetTableCellDelegate: class {
-    func onStateChange(_ sender: NSButton)
-    func onNameChange(_ sender: NSTextField)
-}

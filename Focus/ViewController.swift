@@ -12,7 +12,7 @@ class ViewController: NSViewController {
 
     @IBOutlet var tableView: NSTableView!
     
-    var data: [TodoListItem] = MyData().data
+    var data: [FocusItem] = MyData().data
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,20 +40,30 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let view: FocusSheetTableCellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "defaultRow"), owner: self) as! FocusSheetTableCellView
+        
+        var view: FocusSheetTableCellView
+        
+        if let challenge = data[row] as? ChallengeItem {
+//            Challenge item
+            view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "challengeCell"), owner: self) as! FocusSheetChallengeCellView
+            
+            view.otherLabel.stringValue = challenge.strDayOfDays
+        } else if let task = data[row] as? TaskItem {
+//            Task item
+            view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "taskCell"), owner: self) as! FocusSheetTaskCellView
+            
+            view.otherLabel.stringValue = "3 days ago"
+        } else {
+            return nil
+        }
+        
         view.cellDelegate = self
         view.nameLabel.stringValue = data[row].name
-        if data[row].type == .priority {
-            view.nameLabel.font = NSFontManager.shared.convert(view.nameLabel.font!, toHaveTrait: .boldFontMask)
-        }
+        view.nameLabel.font = NSFontManager.shared.convert(view.nameLabel.font!, toHaveTrait: .boldFontMask)
+        
         view.checkbox.state = data[row].done ? NSControl.StateValue.on : NSControl.StateValue.off
-        if let challenge = data[row].challengeString() {
-            view.otherLabel.stringValue = challenge
-        } else {
-            view.otherLabel.stringValue = ""
-        }
-        view.itemColorLabel.setType(data[row].type)
-        return view
+        
+        return view as? NSView
     }
     
 }

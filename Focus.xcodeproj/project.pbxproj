@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D5C5E19203EC8B0008A8979 /* FocusSheetTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C5E18203EC8B0008A8979 /* FocusSheetTableCellView.swift */; };
-		0D957026203F8DFF00D7BF86 /* FocusSheetTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957025203F8DFF00D7BF86 /* FocusSheetTableRowView.swift */; };
+		0D3DC1AE2045456F00709842 /* FocusSheetCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */; };
+		0D3DC1B020454C8700709842 /* FocusSheetChallengeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */; };
+		0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */; };
+		0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */; };
+		0D8E62AF20457CC500AE2F93 /* ChallengeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62AE20457CC500AE2F93 /* ChallengeItem.swift */; };
+		0D8E62B120459BDF00AE2F93 /* FocusSheetTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */; };
 		0D957028203FB6CF00D7BF86 /* LabelColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957027203FB6CF00D7BF86 /* LabelColorView.swift */; };
 		0D95702A203FD96200D7BF86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957029203FD96200D7BF86 /* Constants.swift */; };
-		A8267B842018649C00D9EA87 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8267B832018649C00D9EA87 /* TodoListItem.swift */; };
+		A8267B842018649C00D9EA87 /* FocusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8267B832018649C00D9EA87 /* FocusItem.swift */; };
 		A83F00F11FD4E2E2005A213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F00F01FD4E2E2005A213B /* AppDelegate.swift */; };
 		A83F00F31FD4E2E2005A213B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F00F21FD4E2E2005A213B /* ViewController.swift */; };
 		A83F00F51FD4E2E2005A213B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83F00F41FD4E2E2005A213B /* Assets.xcassets */; };
@@ -38,11 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D5C5E18203EC8B0008A8979 /* FocusSheetTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTableCellView.swift; sourceTree = "<group>"; };
-		0D957025203F8DFF00D7BF86 /* FocusSheetTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTableRowView.swift; sourceTree = "<group>"; };
+		0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSheetCellProtocol.swift; sourceTree = "<group>"; };
+		0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetChallengeCellView.swift; sourceTree = "<group>"; };
+		0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTaskCellView.swift; sourceTree = "<group>"; };
+		0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		0D8E62AE20457CC500AE2F93 /* ChallengeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItem.swift; sourceTree = "<group>"; };
+		0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTableRowView.swift; sourceTree = "<group>"; };
 		0D957027203FB6CF00D7BF86 /* LabelColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelColorView.swift; sourceTree = "<group>"; };
 		0D957029203FD96200D7BF86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A8267B832018649C00D9EA87 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
+		A8267B832018649C00D9EA87 /* FocusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusItem.swift; sourceTree = "<group>"; };
 		A83F00ED1FD4E2E2005A213B /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83F00F01FD4E2E2005A213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A83F00F21FD4E2E2005A213B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D8E62AA20457C1100AE2F93 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D957027203FB6CF00D7BF86 /* LabelColorView.swift */,
+				0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */,
+				0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */,
+				0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */,
+				0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		0D8E62AB20457C4000AE2F93 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8267B832018649C00D9EA87 /* FocusItem.swift */,
+				0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */,
+				0D8E62AE20457CC500AE2F93 /* ChallengeItem.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 		A83F00E41FD4E2E1005A213B = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +138,9 @@
 			children = (
 				A83F00F01FD4E2E2005A213B /* AppDelegate.swift */,
 				A83F00F21FD4E2E2005A213B /* ViewController.swift */,
-				0D5C5E18203EC8B0008A8979 /* FocusSheetTableCellView.swift */,
-				0D957025203F8DFF00D7BF86 /* FocusSheetTableRowView.swift */,
+				0D8E62AA20457C1100AE2F93 /* CellViews */,
 				0D957029203FD96200D7BF86 /* Constants.swift */,
-				0D957027203FB6CF00D7BF86 /* LabelColorView.swift */,
-				A8267B832018649C00D9EA87 /* TodoListItem.swift */,
+				0D8E62AB20457C4000AE2F93 /* DataModels */,
 				A83F00F41FD4E2E2005A213B /* Assets.xcassets */,
 				A83F00F61FD4E2E2005A213B /* Main.storyboard */,
 				A83F00F91FD4E2E2005A213B /* Info.plist */,
@@ -272,13 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5C5E19203EC8B0008A8979 /* FocusSheetTableCellView.swift in Sources */,
+				0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */,
+				0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */,
+				0D3DC1AE2045456F00709842 /* FocusSheetCellProtocol.swift in Sources */,
 				0D957028203FB6CF00D7BF86 /* LabelColorView.swift in Sources */,
-				A8267B842018649C00D9EA87 /* TodoListItem.swift in Sources */,
+				0D8E62B120459BDF00AE2F93 /* FocusSheetTableRowView.swift in Sources */,
+				A8267B842018649C00D9EA87 /* FocusItem.swift in Sources */,
 				A83F00F31FD4E2E2005A213B /* ViewController.swift in Sources */,
 				0D95702A203FD96200D7BF86 /* Constants.swift in Sources */,
 				A83F00F11FD4E2E2005A213B /* AppDelegate.swift in Sources */,
-				0D957026203F8DFF00D7BF86 /* FocusSheetTableRowView.swift in Sources */,
+				0D3DC1B020454C8700709842 /* FocusSheetChallengeCellView.swift in Sources */,
+				0D8E62AF20457CC500AE2F93 /* ChallengeItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

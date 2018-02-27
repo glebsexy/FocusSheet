@@ -11,26 +11,38 @@ import Cocoa
 @IBDesignable
 class LabelColorView: NSView {
     
-    var isDrawn = false
-    var currentType: TodoListItemType = .regular
+    var isDrawn: Bool = false
+    var isPriority: Bool = false
+    var isChallenge: Bool = false
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         isDrawn = true
-        setType(currentType)
+        setType(isPriority, isChallenge)
     }
     
-    func setType(_ type: TodoListItemType) {
-        currentType = type
+    func setType(priority isPriority: Bool) {
+        setType(isPriority)
+    }
+    
+    
+    func setType(challenge isChallenge: Bool) {
+        setType(isChallenge)
+    }
+    
+    private func setType(_ isPriority: Bool = false, _ isChallenge: Bool = false) {
+        self.isPriority = isPriority
+        self.isChallenge = isChallenge
+        
         guard isDrawn else {
             return
         }
-        switch type {
-        case .regular:
+        
+        if !isPriority && !isChallenge {
             fill(with: FSColor.regular)
-        case .priority:
+        } else if isPriority && !isChallenge {
             fill(with: FSColor.priority)
-        case .challenge:
+        } else if !isPriority && isChallenge {
             fill(with: FSColor.challenge)
         }
     }
