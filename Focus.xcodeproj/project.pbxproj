@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D3DC1AE2045456F00709842 /* FocusSheetCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */; };
+		0D3DC1AE2045456F00709842 /* FocusSheetTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */; };
 		0D3DC1B020454C8700709842 /* FocusSheetChallengeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */; };
 		0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */; };
 		0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */; };
@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSheetCellProtocol.swift; sourceTree = "<group>"; };
+		0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSheetTableCellView.swift; sourceTree = "<group>"; };
 		0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetChallengeCellView.swift; sourceTree = "<group>"; };
 		0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTaskCellView.swift; sourceTree = "<group>"; };
 		0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				0D957027203FB6CF00D7BF86 /* LabelColorView.swift */,
 				0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */,
 				0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */,
-				0D3DC1AD2045456F00709842 /* FocusSheetCellProtocol.swift */,
+				0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */,
 				0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */,
 			);
 			path = CellViews;
@@ -302,7 +302,7 @@
 			files = (
 				0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */,
 				0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */,
-				0D3DC1AE2045456F00709842 /* FocusSheetCellProtocol.swift in Sources */,
+				0D3DC1AE2045456F00709842 /* FocusSheetTableCellView.swift in Sources */,
 				0D957028203FB6CF00D7BF86 /* LabelColorView.swift in Sources */,
 				0D8E62B120459BDF00AE2F93 /* FocusSheetTableRowView.swift in Sources */,
 				A8267B842018649C00D9EA87 /* FocusItem.swift in Sources */,
