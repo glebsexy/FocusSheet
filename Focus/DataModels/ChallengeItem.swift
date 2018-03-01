@@ -12,7 +12,7 @@ struct ChallengeItem: FocusItem {
     
     
     var name: String
-    var done: Bool
+    var isDone: Bool
     var dateAdded: Date
     var dateComplete: Date?
     
@@ -26,7 +26,7 @@ struct ChallengeItem: FocusItem {
         assert(!done && dateComplete == nil)
         
         self.name = name
-        self.done = done
+        self.isDone = done
         self.startDate = startDate
         self.days = days
         self.currentDay = currentDay

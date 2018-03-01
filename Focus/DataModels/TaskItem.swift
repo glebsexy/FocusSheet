@@ -11,19 +11,19 @@ import Foundation
 struct TaskItem: FocusItem {
     
     var name: String
-    var done: Bool
+    var isDone: Bool
     var dateAdded: Date
     var dateComplete: Date?
     
-    var priority: Bool
+    var isPriority: Bool
     
     init(name: String = "Default task name", done: Bool = false, priority: Bool = false, dateAdded: Date = Date(timeIntervalSince1970: (365*48+60)*24*60*60*60), dateComplete: Date? = nil) {
         
         assert(!done && dateComplete == nil)
         
         self.name = name
-        self.done = done
-        self.priority = priority
+        self.isDone = done
+        self.isPriority = priority
         self.dateAdded = dateAdded
         self.dateComplete = dateComplete
     }

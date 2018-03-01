@@ -15,5 +15,5 @@ enum FSColor {
     static let challenge = NSColor(red: 0.4, green: 0.875, blue: 0.55, alpha: 0.58)
     
     static let selectedCell = NSColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 0.24)
-    static let tableGrid = NSColor(red: 0.76, green: 0.75, blue: 0.75, alpha: 0.24)
+    static let tableGrid = NSColor(red: 237/255, green: 237/255, blue: 238/255, alpha: 1)
 }

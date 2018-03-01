@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		0D3DC1AE2045456F00709842 /* FocusSheetTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */; };
 		0D3DC1B020454C8700709842 /* FocusSheetChallengeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */; };
+		0D549A1E2046EB2500FD4702 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D549A1D2046EB2500FD4702 /* MyData.swift */; };
+		0D549A202046EBFE00FD4702 /* FSTableDimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D549A1F2046EBFE00FD4702 /* FSTableDimens.swift */; };
 		0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */; };
+		0D6246F920478D6D001FB488 /* FocusSheetTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6246F820478D6D001FB488 /* FocusSheetTableView.swift */; };
+		0D6246FB2047A0F5001FB488 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D6246FA2047A0F5001FB488 /* README.md */; };
+		0D62473F2047D87A001FB488 /* Focus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D62473D2047D87A001FB488 /* Focus.xcdatamodeld */; };
 		0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */; };
 		0D8E62AF20457CC500AE2F93 /* ChallengeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62AE20457CC500AE2F93 /* ChallengeItem.swift */; };
 		0D8E62B120459BDF00AE2F93 /* FocusSheetTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */; };
 		0D957028203FB6CF00D7BF86 /* LabelColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957027203FB6CF00D7BF86 /* LabelColorView.swift */; };
-		0D95702A203FD96200D7BF86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957029203FD96200D7BF86 /* Constants.swift */; };
+		0D95702A203FD96200D7BF86 /* FSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D957029203FD96200D7BF86 /* FSColor.swift */; };
 		A8267B842018649C00D9EA87 /* FocusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8267B832018649C00D9EA87 /* FocusItem.swift */; };
 		A83F00F11FD4E2E2005A213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F00F01FD4E2E2005A213B /* AppDelegate.swift */; };
 		A83F00F31FD4E2E2005A213B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F00F21FD4E2E2005A213B /* ViewController.swift */; };
@@ -44,12 +49,18 @@
 /* Begin PBXFileReference section */
 		0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSheetTableCellView.swift; sourceTree = "<group>"; };
 		0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetChallengeCellView.swift; sourceTree = "<group>"; };
+		0D549A1D2046EB2500FD4702 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		0D549A1F2046EBFE00FD4702 /* FSTableDimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTableDimens.swift; sourceTree = "<group>"; };
 		0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTaskCellView.swift; sourceTree = "<group>"; };
+		0D6246F820478D6D001FB488 /* FocusSheetTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTableView.swift; sourceTree = "<group>"; };
+		0D6246FA2047A0F5001FB488 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0D6247002047D4FF001FB488 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D62473E2047D87A001FB488 /* Focus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Focus.xcdatamodel; sourceTree = "<group>"; };
 		0D8E62AC20457CBA00AE2F93 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		0D8E62AE20457CC500AE2F93 /* ChallengeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItem.swift; sourceTree = "<group>"; };
 		0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSheetTableRowView.swift; sourceTree = "<group>"; };
 		0D957027203FB6CF00D7BF86 /* LabelColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelColorView.swift; sourceTree = "<group>"; };
-		0D957029203FD96200D7BF86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D957029203FD96200D7BF86 /* FSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSColor.swift; sourceTree = "<group>"; };
 		A8267B832018649C00D9EA87 /* FocusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusItem.swift; sourceTree = "<group>"; };
 		A83F00ED1FD4E2E2005A213B /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83F00F01FD4E2E2005A213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,16 +102,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D8E62AA20457C1100AE2F93 /* CellViews */ = {
+		0D549A1C2046EB0100FD4702 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0D957029203FD96200D7BF86 /* FSColor.swift */,
+				0D549A1D2046EB2500FD4702 /* MyData.swift */,
+				0D549A1F2046EBFE00FD4702 /* FSTableDimens.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0D6246F7204783AE001FB488 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				0D957027203FB6CF00D7BF86 /* LabelColorView.swift */,
 				0D5C5E18203EC8B0008A8979 /* FocusSheetTaskCellView.swift */,
 				0D3DC1AF20454C8700709842 /* FocusSheetChallengeCellView.swift */,
 				0D3DC1AD2045456F00709842 /* FocusSheetTableCellView.swift */,
-				0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */,
 			);
-			path = CellViews;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0D6246FF2047D4FF001FB488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D6247002047D4FF001FB488 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D8E62AA20457C1100AE2F93 /* FocusTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0D6246F7204783AE001FB488 /* Cells */,
+				0D8E62B020459BDF00AE2F93 /* FocusSheetTableRowView.swift */,
+				0D6246F820478D6D001FB488 /* FocusSheetTableView.swift */,
+			);
+			path = FocusTableView;
 			sourceTree = "<group>";
 		};
 		0D8E62AB20457C4000AE2F93 /* DataModels */ = {
@@ -116,10 +154,12 @@
 		A83F00E41FD4E2E1005A213B = {
 			isa = PBXGroup;
 			children = (
+				0D6246FA2047A0F5001FB488 /* README.md */,
 				A83F00EF1FD4E2E2005A213B /* Focus */,
 				A83F01021FD4E2E2005A213B /* FocusTests */,
 				A83F010D1FD4E2E2005A213B /* FocusUITests */,
 				A83F00EE1FD4E2E2005A213B /* Products */,
+				0D6246FF2047D4FF001FB488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,13 +178,14 @@
 			children = (
 				A83F00F01FD4E2E2005A213B /* AppDelegate.swift */,
 				A83F00F21FD4E2E2005A213B /* ViewController.swift */,
-				0D8E62AA20457C1100AE2F93 /* CellViews */,
-				0D957029203FD96200D7BF86 /* Constants.swift */,
+				0D8E62AA20457C1100AE2F93 /* FocusTableView */,
+				0D549A1C2046EB0100FD4702 /* Constants */,
 				0D8E62AB20457C4000AE2F93 /* DataModels */,
 				A83F00F41FD4E2E2005A213B /* Assets.xcassets */,
 				A83F00F61FD4E2E2005A213B /* Main.storyboard */,
 				A83F00F91FD4E2E2005A213B /* Info.plist */,
 				A83F00FA1FD4E2E2005A213B /* Focus.entitlements */,
+				0D62473D2047D87A001FB488 /* Focus.xcdatamodeld */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -274,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6246FB2047A0F5001FB488 /* README.md in Resources */,
 				A83F00F51FD4E2E2005A213B /* Assets.xcassets in Resources */,
 				A83F00F81FD4E2E2005A213B /* Main.storyboard in Resources */,
 			);
@@ -303,11 +345,15 @@
 				0D5C5E19203EC8B0008A8979 /* FocusSheetTaskCellView.swift in Sources */,
 				0D8E62AD20457CBA00AE2F93 /* TaskItem.swift in Sources */,
 				0D3DC1AE2045456F00709842 /* FocusSheetTableCellView.swift in Sources */,
+				0D549A1E2046EB2500FD4702 /* MyData.swift in Sources */,
+				0D6246F920478D6D001FB488 /* FocusSheetTableView.swift in Sources */,
 				0D957028203FB6CF00D7BF86 /* LabelColorView.swift in Sources */,
+				0D549A202046EBFE00FD4702 /* FSTableDimens.swift in Sources */,
+				0D62473F2047D87A001FB488 /* Focus.xcdatamodeld in Sources */,
 				0D8E62B120459BDF00AE2F93 /* FocusSheetTableRowView.swift in Sources */,
 				A8267B842018649C00D9EA87 /* FocusItem.swift in Sources */,
 				A83F00F31FD4E2E2005A213B /* ViewController.swift in Sources */,
-				0D95702A203FD96200D7BF86 /* Constants.swift in Sources */,
+				0D95702A203FD96200D7BF86 /* FSColor.swift in Sources */,
 				A83F00F11FD4E2E2005A213B /* AppDelegate.swift in Sources */,
 				0D3DC1B020454C8700709842 /* FocusSheetChallengeCellView.swift in Sources */,
 				0D8E62AF20457CC500AE2F93 /* ChallengeItem.swift in Sources */,
@@ -595,6 +641,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D62473D2047D87A001FB488 /* Focus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D62473E2047D87A001FB488 /* Focus.xcdatamodel */,
+			);
+			currentVersion = 0D62473E2047D87A001FB488 /* Focus.xcdatamodel */;
+			path = Focus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A83F00E51FD4E2E1005A213B /* Project object */;
 }

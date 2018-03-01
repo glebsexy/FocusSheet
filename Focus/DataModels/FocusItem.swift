@@ -11,7 +11,8 @@ import Foundation
 protocol FocusItem {
     
     var name: String { get set }
-    var done: Bool { get set }
+    var isDone: Bool { get set }
+//    var notes: String { get set }
     
     var dateAdded: Date { get set }
     var dateComplete: Date? { get set }

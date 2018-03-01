@@ -10,7 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    @IBOutlet var tableView: NSTableView!
+    @IBOutlet var tableView: FocusSheetTableView!
     
     var data: [FocusItem] = MyData().data
     
@@ -19,6 +19,9 @@ class ViewController: NSViewController {
 //        Set the table view data source
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+//        Set table row height
+        self.tableView.rowHeight = FSTableRowHeight.small
     }
     
     override var representedObject: Any? {
@@ -48,11 +51,13 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
             view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "challengeCell"), owner: self) as! FocusSheetChallengeCellView
             
             view.otherLabel.stringValue = challenge.strDayOfDays
+            
         } else if let task = data[row] as? TaskItem {
 //            Task item
             view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "taskCell"), owner: self) as! FocusSheetTaskCellView
             
             view.otherLabel.stringValue = "3 days ago"
+            
         } else {
             return nil
         }
@@ -61,7 +66,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         view.nameLabel.stringValue = data[row].name
         view.nameLabel.font = NSFontManager.shared.convert(view.nameLabel.font!, toHaveTrait: .boldFontMask)
         
-        view.checkbox.state = data[row].done ? NSControl.StateValue.on : NSControl.StateValue.off
+        view.checkbox.state = data[row].isDone ? NSControl.StateValue.on : NSControl.StateValue.off
         
         return view as? NSView
     }
@@ -74,9 +79,9 @@ extension ViewController: FocusSheetTableCellDelegate {
         let row = tableView.row(for: sender)
         guard row >= 0 else { return }
         if sender.state == NSControl.StateValue.on {
-            data[row].done = true
+            data[row].isDone = true
         } else {
-            data[row].done = false
+            data[row].isDone = false
         }
         print("State changed.")
     }
