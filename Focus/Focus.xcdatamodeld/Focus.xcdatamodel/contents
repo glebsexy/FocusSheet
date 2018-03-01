@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ChallengeEntity" representedClassName="ChallengeEntity" parentEntity="FocusEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="currentDay" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="days" attributeType="Integer 32" minValueString="1" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="FocusEntity" representedClassName="FocusEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="dateAdded" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateComplete" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDone" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TaskEntity" representedClassName="TaskEntity" parentEntity="FocusEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="isPriority" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FocusEntity" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="TaskEntity" positionX="16" positionY="153" width="128" height="58"/>
+        <element name="ChallengeEntity" positionX="-144" positionY="153" width="128" height="88"/>
+    </elements>
+</model>
