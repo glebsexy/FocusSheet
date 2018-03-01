@@ -15,8 +15,8 @@
         <attribute name="isPriority" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="FocusEntity" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="TaskEntity" positionX="16" positionY="153" width="128" height="58"/>
-        <element name="ChallengeEntity" positionX="-144" positionY="153" width="128" height="88"/>
+        <element name="ChallengeEntity" positionX="-144" positionY="153" width="128" height="90"/>
+        <element name="FocusEntity" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="TaskEntity" positionX="16" positionY="153" width="128" height="60"/>
     </elements>
 </model>
