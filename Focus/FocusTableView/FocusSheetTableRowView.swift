@@ -19,17 +19,31 @@ class FocusSheetTableRowView: NSTableRowView {
             FSColor.selectedCell.setFill()
             let selectionPath = NSBezierPath(rect: selectionRect)
             selectionPath.fill()
+            drawSeparator(in: dirtyRect)
+        }
+    }
+
+    override func drawSeparator(in dirtyRect: NSRect) {
+        if isNextRowSelected || isSelected {
+            drawSeparator(in: dirtyRect, fullWidth: true)
+        } else {
+            drawSeparator(in: dirtyRect, fullWidth: false)
         }
     }
     
-    override func drawSeparator(in dirtyRect: NSRect) {
+    func drawSeparator(in dirtyRect: NSRect, fullWidth: Bool) {
         let path = NSBezierPath()
         path.lineWidth = 1
         
         let y = dirtyRect.height - 0.5
-        let startPoint = CGPoint(x: FSTableSeparatorMargin.start, y: y)
-        let endPoint = CGPoint(x: dirtyRect.width - FSTableSeparatorMargin.end, y: y)
-        
+        var startPoint, endPoint: CGPoint
+        if fullWidth {
+             startPoint = CGPoint(x: 0, y: y)
+             endPoint = CGPoint(x: dirtyRect.width, y: y)
+        } else {
+             startPoint = CGPoint(x: FSTableSeparatorMargin.start, y: y)
+             endPoint = CGPoint(x: dirtyRect.width - FSTableSeparatorMargin.end, y: y)
+        }
         path.move(to: startPoint)
         path.line(to: endPoint)
         
@@ -37,4 +51,8 @@ class FocusSheetTableRowView: NSTableRowView {
         path.stroke()
     }
     
+}
+
+protocol FocusSheetTableRowDelegate: class {
+    func onSelected(_ sender: NSTableRowView)
 }
